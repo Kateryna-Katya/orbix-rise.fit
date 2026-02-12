@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?= $domainTitle ?> — AI-инструменты для реальных задач
+    </title>
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22url(%23g)%22 stroke-width=%228%22/><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%25%22 stop-color=%22%23a855f7%22/><stop offset=%22100%25%22 stop-color=%22%233b82f6%22/></linearGradient></defs><path d=%22M30 50 Q50 20 70 50 T30 50%22 fill=%22url(%23g)%22 opacity=%220.8%22/></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="./#hero" class="logo">
+                    <span class="logo-dot"></span>
+                    <?= $domainTitle ?>
+                </a>
+
+                <ul class="nav-list">
+                    <li><a href="./#hero" class="nav-link">Главная</a></li>
+                    <li><a href="./#features" class="nav-link">Возможности</a></li>
+                    <li><a href="./#how-it-works" class="nav-link">Как это работает</a></li>
+                    <li><a href="./#benefits" class="nav-link">Преимущества</a></li>
+                    <li><a href="./#faq" class="nav-link">Вопросы</a></li>
+                </ul>
+
+                <a href="./#contact" class="btn btn-primary">Связаться</a>
+
+<button class="burger" id="burger-menu" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<section id="hero" class="hero">
+<div class="hero-canvas-container" id="canvas-parent">
+    <canvas id="hero-canvas"></canvas>
+</div>
+
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Инновационная технология</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="text-gradient">AI-инструменты</span> <br>
+                для реальных задач
+            </h1>
+            <p class="hero-subtitle">
+                Переосмыслите подход к развитию. Платформа уже доступна в Европе — легко разобраться без опыта и начать
+                свой путь.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary btn-lg">Начать сейчас</a>
+                <a href="#features" class="btn btn-outline">Узнать детали</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">2 мин</span>
+                    <span class="stat-text">Быстрый старт</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">24/7</span>
+                    <span class="stat-text">Экспертная поддержка</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="features" class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Технологии, которые работают на вас</h2>
+            <p class="section-subtitle">Решения, которые меняют правила игры и открывают новые горизонты проекта.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="card-icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3>Быстрый и лёгкий старт</h3>
+                <p>Подключение занимает 2 минуты. Удобная адаптация без сложностей даже для новичков.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <h3>Стратегия роста</h3>
+                <p>Практики, применимые уже сегодня для масштабирования вашего дела на базе инноваций.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3>Проверенный партнер</h3>
+                <p>Методологии, доказавшие эффективность. Экспертная поддержка на всех этапах развития.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="how-it-works" class="steps">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Пошаговый путь, понятный каждому</h2>
+            <p class="section-subtitle">Начните использовать передовую цифровую инфраструктуру в три простых этапа.</p>
+        </div>
+
+        <div class="steps-wrapper">
+            <div class="step-item" data-step="01">
+                <div class="step-content">
+                    <h3>Пройдите регистрацию</h3>
+                    <p>Занимает не более 2 минут. Мы подготовили платформу для быстрого и легкого старта без лишних
+                        подтверждений.</p>
+                </div>
+            </div>
+
+            <div class="step-item" data-step="02">
+                <div class="step-content">
+                    <h3>Оцените перспективы</h3>
+                    <p>Используйте AI-инструменты для реальных задач: от автоматизации рутины до создания стратегий
+                        роста.</p>
+                </div>
+            </div>
+
+            <div class="step-item" data-step="03">
+                <div class="step-content">
+                    <h3>Получайте результат</h3>
+                    <p>Решения, которые меняют правила игры, начинают работать на ваш пассивный доход и развитие сразу
+                        после запуска.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="benefits" class="benefits">
+    <div class="container">
+        <div class="benefits-layout">
+            <div class="benefits-info">
+                <div class="hero-badge"><span>Выгода и программы</span></div>
+                <h2 class="section-title">Постройте карьеру, которая <span class="text-gradient">работает на вас</span>
+                </h2>
+                <p class="section-subtitle">Мы объединили лучшие практики и AI-инструменты, чтобы вы могли оценить
+                    перспективы проекта уже в первую неделю.</p>
+
+                <ul class="benefits-list">
+                    <li><i data-lucide="check-circle-2"></i> Технология для пассивного дохода</li>
+                    <li><i data-lucide="check-circle-2"></i> Поддержка по всем вопросам 24/7</li>
+                    <li><i data-lucide="check-circle-2"></i> Доступ к платформе открыт в странах ЕС</li>
+                </ul>
+
+                <div class="growth-card" id="growth-trigger">
+                    <div class="growth-header">
+                        <span>Ваша стратегия роста</span>
+                        <span class="growth-percent">+240%</span>
+                    </div>
+                    <div class="growth-chart">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits-visual">
+                <div class="feature-box main">
+                    <i data-lucide="globe"></i>
+                    <h4>Глобальный доступ</h4>
+                    <p>Платформа уже доступна в Европе. Ваша цифровая инфраструктура не имеет границ.</p>
+                </div>
+                <div class="feature-box side">
+                    <i data-lucide="trending-up"></i>
+                    <h4>Масштабирование</h4>
+                    <p>Легко расширяйте горизонты проекта с нашими инструментами.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Остались вопросы?</h2>
+            <p class="section-subtitle">Мы собрали ответы на самые популярные запросы о платформе
+                <?= $domainTitle ?>.
+            </p>
+        </div>
+
+        <div class="faq-wrapper">
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <span>Нужен ли опыт в программировании для старта?</span>
+                    <i data-lucide="plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Абсолютно нет. Наша платформа построена так, чтобы обеспечить пошаговый путь, понятный каждому.
+                        Вы сможете использовать AI-инструменты для реальных задач сразу после регистрации.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <span>Как работает программа пассивного дохода?</span>
+                    <i data-lucide="plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>На базе инноваций мы создали алгоритмы, которые автоматизируют рутинные процессы. Это позволяет
+                        вам высвободить время и создать стабильную стратегию роста с минимальным вашим участием.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <span>Доступен ли сервис в моей стране?</span>
+                    <i data-lucide="plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>На данный момент платформа уже доступна в Европе и активно расширяет горизонты. Предложение
+                        активно только в странах ЕС и Великобритании.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <span>Насколько это безопасно?</span>
+                    <i data-lucide="plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Мы используем передовую цифровую инфраструктуру и протоколы шифрования банковского уровня. Ваша
+                        экспертная поддержка и сохранность данных — наш главный приоритет.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2 class="section-title">Запросить доступ</h2>
+                <p>Оставьте заявку, и наш эксперт проведет для вас бесплатную консультацию по всем вопросам платформы.
+                </p>
+
+                <div class="contact-meta">
+                    <div class="meta-item">
+                        <i data-lucide="check-circle"></i>
+                        <span>Ответ в течение 15 минут</span>
+                    </div>
+                    <div class="meta-item">
+                        <i data-lucide="lock"></i>
+                        <span>Ваши данные защищены</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email адрес" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Номер телефона (только цифры)" required>
+                </div>
+
+                <div class="captcha-wrapper">
+                    <label for="captcha">Сколько будет <span id="captcha-question"></span>?</label>
+                    <input type="number" id="captcha-input" placeholder="Ответ" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Я согласен с <a href="./personal-data-policy.php">политикой обработки
+                            данных</a></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                    <span>Узнать детали</span>
+                </button>
+
+                <div id="form-success" class="form-message success">
+                    <i data-lucide="party-popper"></i>
+                    <p>Доступ открыт! Мы свяжемся с вами в ближайшее время.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col info">
+                    <a href="./#hero" class="logo footer-logo">
+                        <span class="logo-dot"></span>
+                        <?= $domainTitle ?>
+                    </a>
+                    <p class="footer-desc">Технологии нового поколения, которые меняют правила игры и делают AI
+                        доступным для каждого.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="./#features">Возможности</a></li>
+                        <li><a href="./#how-it-works">Инструкции</a></li>
+                        <li><a href="./#benefits">Выгоды</a></li>
+                        <li><a href="./#faq">Помощь</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Документы</h4>
+                    <ul class="footer-links">
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./cookies.php">Cookie Policy</a></li>
+                    <li><a href="./terms.php">Terms of Service</a></li>
+                    <li><a href="./return.php">Return Policy</a></li>
+                    <li><a href="./disclaimer.php">Disclaimer</a></li>
+                    <li><a href="./contact.php">Contact Us</a></li>
+                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><i data-lucide="phone" size="18"></i> +44 20 1187 0189</li>
+                        <li><i data-lucide="mail" size="18"></i> hello@
+                            <?= $fullDomain ?>
+                        </li>
+                        <li><i data-lucide="map-pin" size="18"></i> 85 Great Portland St, London, UK</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026
+                    <?= $domainTitle ?>. Все права защищены. Предложение активно только в странах ЕС.
+                </p>
+            </div>
+        </div>
+    </footer>
+<div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-content">
+        <i data-lucide="cookie"></i>
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie
+                политике</a>.</p>
+        <button id="cookie-accept" class="btn btn-primary">Принять</button>
+    </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
